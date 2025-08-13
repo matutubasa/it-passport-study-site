@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITパスポート学習サイト</title>
+    <style>
+        /* Light/Dark theme friendly styles */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --header-bg: #f8f9fa;
+            --border-color: #dee2e6;
+            --link-color: #0066cc;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #e0e0e0;
+                --header-bg: #2d2d2d;
+                --border-color: #404040;
+                --link-color: #66b3ff;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: var(--text-color);
+            opacity: 0.8;
+        }
+
+        main {
+            flex: 1;
+            padding: 3rem 0;
+        }
+
+        .intro-section, .next-steps-section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--link-color);
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background-color: var(--header-bg);
+            padding: 1.5rem 0;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            margin-top: auto;
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p, li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ITパスポート学習サイト</h1>
+            <p class="subtitle">ITパスポート試験の学習を効率的にサポートします</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="intro-section">
+                <h2>このサイトについて</h2>
+                <p>
+                    ITパスポート学習サイトへようこそ。このサイトは、ITパスポート試験の合格を目指す皆様の学習をサポートするために作成されました。
+                </p>
+                <p>
+                    ITパスポート試験は、ITに関する基礎的な知識を証明する国家試験です。ストラテジ系、マネジメント系、テクノロジ系の3つの分野から幅広く出題されます。
+                </p>
+                <p>
+                    当サイトでは、効率的な学習方法と実践的な問題演習を通じて、試験合格に必要な知識の習得をお手伝いします。
+                </p>
+            </section>
+
+            <section class="next-steps-section">
+                <h2>今後の予定</h2>
+                <p>以下のコンテンツを順次追加していく予定です：</p>
+                <ul>
+                    <li><strong>用語集</strong> - ITパスポート試験に頻出する重要用語の解説</li>
+                    <li><strong>模擬試験</strong> - 本番さながらの問題演習で実力をチェック</li>
+                    <li><strong>学習計画</strong> - 効率的な学習スケジュールの提案</li>
+                    <li><strong>過去問解説</strong> - 過去問題の詳細な解説と解き方のコツ</li>
+                </ul>
+                <p>
+                    サイトの更新情報は、GitHubリポジトリで確認できます。皆様の学習に役立つコンテンツを継続的に追加していきますので、ぜひ定期的にご確認ください。
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-text">© 2024 ITパスポート学習サイト. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
